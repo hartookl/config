@@ -57,7 +57,7 @@
 
   security.sudo.wheelNeedsPassword = false;
 
-  # === СИСТЕМНЫЕ ПАКЕТЫ (только самое необходимое) ===
+  # === СИСТЕМНЫЕ ПАКЕТЫ ===
   environment.systemPackages = with pkgs; [
     vim wget curl git
     networkmanagerapplet
@@ -65,5 +65,5 @@
     nvidia-settings
   ];
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";  # ← ИСПРАВЛЕНО НА 24.05
 }
